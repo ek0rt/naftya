@@ -31,34 +31,33 @@
 @media (max-width: 767px)
 
   .menu
-    flex-direction: column
     position: fixed
+    flex-direction: column
+    justify-content: center
+    align-items: center
     top: 0
     left: -100%
-    width: 30%
+    width: 35%
     height: 100vh
-    padding: 170px 15px
+    padding: 20px 0
     background-color: rgba(255, 181, 245, 0.6)
-    text-align: left
     border: none
     transition: 0.6s
     &__active
       left: 0
     &__link
-      text-align: left
       font-size: 20px
       color: #be0a82
       font-weight: 500
     &__item
       border: none
-      padding: 0
-      width: auto
+      padding: 20px 0
 
   .hamburger
     display: block
     position: absolute
     right: 10px
-    top: 23px
+    top: 50%
     transform: translateY(-50%)
     width: 26px
     height: 12px
@@ -86,13 +85,10 @@
 @media (max-width: 575px)
 
   .menu
-    width: 37%
-    padding: 170px 0
-    &__active
-      left: 0
+    width: 50%
     &__link
-      font-size: 15px
-      padding: 0
+      display: block
+      text-align: center
 
   .first__screen
     &__block
@@ -100,13 +96,13 @@
       margin-top: 20px
       width: 250px
 
-  .together
-    font-size: 22px
-    line-height: 25px
-
   .content__photo
     width: 250px
     height: 400px
+
+  .together
+    font-size: 22px
+    line-height: 25px
 
   .content__subtitle
     font-size: 21px
